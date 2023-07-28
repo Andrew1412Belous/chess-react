@@ -27,17 +27,17 @@
     align-items: center;
 }
 .cell img {
-    width: 48px;
-    height: 48px;
+    width: 56px;
+    height: 52px;
     position: relative;
 }
 .black {
     /*background-color: deepskyblue;*/
-    background-color: #09046d;
+    background-color: #423d74;
 }
 .white {
     /*background-color: #eed4ac;*/
-    background-color: #ffcd5d;
+    background-color: #a57f23;
 }
 
 .selected {
