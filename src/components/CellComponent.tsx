@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Cell } from '../models/Cell';
 
 interface CellProps {
@@ -8,10 +8,6 @@ interface CellProps {
 }
 
 const CellComponent: React.FC<CellProps> = ({ cell, selected, click }) => {
-	useEffect(() => {
-		console.log(cell);
-	}, [selected]);
-
 	return (
 		<div
 			className={['cell', cell.color, selected ? 'selected' : ''].join(' ')}

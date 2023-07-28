@@ -80,10 +80,8 @@ export class Cell {
 	}
 
 	moveFigure(target: Cell) {
-		// if (this.figure && target.figure?.canMove(target)) {
 		if (this.figure?.canMove(target)) {
 			this.figure?.moveFigure(target);
-			console.log(this.figure);
 			target.setFigure(this.figure);
 			this.figure = null;
 		}
