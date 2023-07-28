@@ -5,6 +5,7 @@ import { King } from './figures/King';
 import { Bishop } from './figures/Bishop';
 import { Knight } from './figures/Knight';
 import { Rook } from './figures/Rook';
+import { Queen } from './figures/Queen';
 
 export class Board {
 	cells: Cell[][] = [];
@@ -61,8 +62,8 @@ export class Board {
 	}
 
 	private addQueens() {
-		new King(Colors.BLACK, this.getCell(3, 0));
-		new King(Colors.WHITE, this.getCell(3, 7));
+		new Queen(Colors.BLACK, this.getCell(3, 0));
+		new Queen(Colors.WHITE, this.getCell(3, 7));
 	}
 
 	private addBishops() {
