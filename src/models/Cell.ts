@@ -17,8 +17,18 @@ export class Cell {
 		this.y = y;
 		this.color = color;
 		this.figure = figure;
-		this.available = false;
 		this.board = board;
+		this.available = false;
 		this.id = Math.random();
+	}
+
+	moveFigure(target: Cell) {
+		// if (this.figure && target.figure?.canMove(target)) {
+		if (this.figure?.canMove(target)) {
+			this.figure?.moveFigure(target);
+			console.log(this.figure);
+			target.figure = this.figure;
+			this.figure = null;
+		}
 	}
 }

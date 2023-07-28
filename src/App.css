@@ -32,27 +32,26 @@
     position: relative;
 }
 .black {
-    /*background-color: deepskyblue;*/
-    background-color: #423d74;
+    background-color: deepskyblue;
 }
 .white {
-    /*background-color: #eed4ac;*/
-    background-color: #a57f23;
+    background-color: #eed4ac;
 }
 
 .selected {
     background-color: brown;
 }
+
 .available {
     height: 12px;
     width: 12px;
     border-radius: 50%;
-    background-color: #22c022;
+    background-color: #32c832;
 }
 
-.lost {
-    height: calc(50vh - 60px);
-    padding: 30px;
-    margin-left: 50px;
-    background-color: lightgray;
-}
+/*.lost {*/
+/*    height: calc(50vh - 60px);*/
+/*    padding: 30px;*/
+/*    margin-left: 50px;*/
+/*    background-color: lightgray;*/
+/*}*/
